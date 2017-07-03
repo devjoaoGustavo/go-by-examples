@@ -14,9 +14,11 @@ func main() {
 
 	go f("goroutines")
 
+	go f("são legais")
+
 	go func(msg string) {
 		fmt.Println(msg)
-	}("going")
+	}("Hello World!!")
 
 	var input string
 	fmt.Scanln(&input)
